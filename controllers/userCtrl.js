@@ -22,7 +22,7 @@ var users = [
 ];
 
 module.exports = {
-  login: function(req, res. next){
+  login: function(req, res, next){
     var userFound = false;
 		users.forEach(function(user) {
 			if (user.userName === req.body.name && user.password === req.body.password) {
@@ -34,6 +34,6 @@ module.exports = {
     res.send({userFound: false});
   };
 
-};
-};
+});
+}
 };
